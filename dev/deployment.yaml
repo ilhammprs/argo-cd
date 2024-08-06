@@ -30,8 +30,7 @@ spec:
   - protocol: TCP
     port: 80
     targetPort: 80
-  type: NodePort
-  nodePort: 30001
+  type: LoadBalancer
 
 ---
 apiVersion: v1
@@ -45,8 +44,7 @@ spec:
   - protocol: TCP
     port: 8080
     targetPort: 80
-  type: NodePort
-  nodePort: 30002
+  type: LoadBalancer
 
 ---
 apiVersion: v1
@@ -60,5 +58,4 @@ spec:
   - protocol: TCP
     port: 9090
     targetPort: 80
-  type: NodePort
-  nodePort: 30003
+  type: LoadBalancer
