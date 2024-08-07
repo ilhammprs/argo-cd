@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: dhruvin30/dhsoniweb
+        image: nginx
         ports:
         - containerPort: 80
 
